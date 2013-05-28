@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jQueryMessageBox.js"></script>
+		<link type="text/css" rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	<ul>
+		<li><a href="#" id="sucm">Success Modal</a></li>
+		<li><a href="#" id="warm">Warning Modal</a></li>
+		<li><a href="#" id="errm">Error Modal</a></li>
+		<li><a href="#" id="sucb">Success Banner</a></li>
+		<li><a href="#" id="warb">Warning Banner</a></li>
+		<li><a href="#" id="errb">Error Banner</a></li>
+	</ul>
+		<script type="text/javascript">
+		$("#sucm").click(function(){
+		$.messageBox({type:'modal',behavior:'success',fontStyle:'Times',showAfter:true,showAfterDuration: 1000,autoClose:true,duration:5000,title:'Done!',text:'The changes have been saved'});
+		});
+		$("#warm").click(function(){
+		$.messageBox({type:'modal',behavior:'warning',title:'Warning',text:'This box contains the warning text'});
+		});
+		$("#errm").click(function(){
+		$.messageBox({type:'modal',behavior:'error',title:'Error',text:'Your action has caused an unexpected error'});
+		});
+		$("#sucb").click(function(){
+		$.messageBox({type:'banner',behavior:'success',fontStyle:'Times',showAfter:true,showAfterDuration: 1000,autoClose:true,duration:5000,text:'This box contains the success text'});
+		});
+		$("#warb").click(function(){
+		$.messageBox({type:'banner',behavior:'warning',text:'Your action has caused an unexpected warning'});
+		});
+		$("#errb").click(function(){
+		$.messageBox({type:'banner',behavior:'error',text:'Your action has caused an unexpected error.Your action has caused an unexpected error.Your action has caused an unexpected error.Your action has caused an unexpected error'});
+		});
+		</script>
+	</body>
+</html>
