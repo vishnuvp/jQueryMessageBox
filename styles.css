@@ -1,0 +1,185 @@
+.jQMB {
+     display: none;  
+	 background-color:transparent;
+	 
+}
+.unselectable {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.jQMBmodal {
+   
+    position: absolute;
+    top:30%;
+    left: 25%;
+    width: 50%;
+
+     border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20x 20px 20px 20px;
+    -webkit-border-radius: 20x 20px 20px 20px;
+	display: none;   
+	background-color:transparent;
+}
+.jQMBheader {
+    font-weight: bold;
+    position: relative;
+    width: 94%;
+    padding:2% 1% 2% 5%;
+    height: auto;
+    float: left;
+    font-size: 1.5em;
+	 
+}
+.jQMBclosebtn {
+	background-color: transparent;
+    float: right;
+    margin-right: 4%;
+    margin-top: -0.6%;
+    padding: 0.2% 1%;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	cursor: pointer;
+	
+}
+
+.jQMBclosebtn:hover {
+box-shadow: 0 0 20px #FFFFFF;
+	-moz-box-shadow: 0 0 20px #FFFFFF;
+	-webkit-box-shadow: 0 0 20px #FFFFFF;
+	border: 1px solid #FFFFFF\9;
+}
+.jQMBwindow {
+    text-align: justify;
+    position: relative;
+    padding: 5% 5% 5% 5%;
+	padding-right: 4.5%\9;
+    width: 90%;
+    float:left;
+	font-size: 1.3em;
+}
+
+.jQMBmodal .jQMBheader {
+    border-radius:  20px 20px 0 0 ;
+    -moz-border-radius: 20px 20px 0 0 ;
+    -webkit-border-radius: 20px 20px 0 0 ;
+}
+
+.jQMBmodal .jQMBwindow {
+    border-radius: 0 0 20px 20px;
+    -moz-border-radius:  0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+}
+
+.jQMBbanner {
+position: relative;
+top: 0%;
+width: 100%;
+float:left;
+clear: both;
+margin: 0;
+}
+.jQMBbanner  .jQMBwindow {
+    padding: 1%;
+    width: 98%;
+	
+}
+/*
+ * Success
+ */
+.jQMBmodalsuccess {
+	box-shadow: 0px 0px 20px #00FF00;
+	-moz-box-shadow: 0px 0px 20px #00FF00;
+	-webkit-box-shadow: 0px 0px 20px #00FF00;
+}
+.jQMBbannersuccess {
+	box-shadow: 0px 0px 20px #00FF00 inset;
+	-moz-box-shadow: 0px 0px 20px #00FF00 inset;
+	-webkit-box-shadow: 0px 0px 20px #00FF00 inset;
+}
+.jQMBmodalsuccess .jQMBheader{
+	
+	color: darkgreen;
+	color: #CEDCB2\9;
+	background-color: #5C8A00;
+    background-color: rgba(0,255,0,0.4);
+	
+}
+.jQMBsuccess .jQMBwindow {
+background-color: #FEFEFE;
+background-color: rgba(255,255,255,0.2);
+border: 1px solid #5C8A00\9;
+color: green;
+}
+.jQMBbannersuccess .jQMBwindow {
+background-color: #c4ffc4;
+background-color: rgba( 0, 255, 0,0.2);
+}
+
+/*
+ * Warning
+ */
+.jQMBmodalwarning {
+	box-shadow: 0px 0px 20px #ECDC07;
+	-moz-box-shadow: 0px 0px 20px #ECDC07;
+	-webkit-box-shadow: 0px 0px 20px #ECDC07;
+}
+.jQMBbannerwarning {
+	box-shadow: 0px 0px 20px #ECDC07 inset;
+	-moz-box-shadow: 0px 0px 20px #ECDC07 inset;
+	-webkit-box-shadow: 0px 0px 20px #ECDC07 inset;
+}
+.jQMBmodalwarning .jQMBheader{
+	color: #F88C03;
+	background-color: #DDE173;
+    background-color: rgba(246,250,128,0.9);
+	
+	
+}
+.jQMBwarning .jQMBwindow {
+background-color: #FEFEFE;
+background-color: rgba(255,255,255,0.6);
+color: #924F00;
+border: 1px solid #DDE173\9;
+
+}
+.jQMBbannerwarning .jQMBwindow {
+background-color: #fcf594;
+background-color: rgba(236, 220, 7,0.2);
+}
+
+/*
+ * Error
+ */
+.jQMBmodalerror {
+	box-shadow: 0px 0px 20px #F58779;
+	-moz-box-shadow: 0px 0px 20px #F58779;
+	-webkit-box-shadow: 0px 0px 20px #F58779;
+}
+.jQMBbannererror {
+	box-shadow: 0px 0px 20px #F58779 inset;
+	-moz-box-shadow: 0px 0px 20px #F58779 inset;
+	-webkit-box-shadow: 0px 0px 20px #F58779 inset;
+}
+.jQMBmodalerror .jQMBheader{
+	color: #E92828;
+	color: #FFC2B2\9;
+	background-color: #F55540;
+    background-color: rgba(245,85,64,0.7);
+	
+	
+}
+.jQMBerror .jQMBwindow {
+background-color: #FEFEFE;
+background-color: rgba(255,255,255,0.2);
+color: #E92828;
+border: 1px solid #F55540\9;
+}
+.jQMBbannererror .jQMBwindow {
+background-color: #fac7c0;
+background-color: rgba(245, 135, 121,0.2);
+}
